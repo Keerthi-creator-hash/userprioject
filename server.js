@@ -1,4 +1,4 @@
-const express =require("express");
+const express = require("express");
 const { route } = require("./routes/userRoutes");
 
 require("dotenv").config(); 
@@ -10,3 +10,4 @@ app.use('/api/users', require ('./routes/userRoutes'));
 app.listen(port ,()=>{
   console.log(`App listening on port ${port}`);
  })
+ module.exports = app; 

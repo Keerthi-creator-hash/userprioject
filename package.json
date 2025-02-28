@@ -2,11 +2,11 @@
   "name": "myuser-project",
   "version": "1.0.0",
   "description": "my-project for users",
-  "main": "server.js",
+  "main": "server.cjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node server.js",
-    "server": "nodemon"
+    "dev": "nodemon server .js"
   },
   "keywords": [
     ""
@@ -14,14 +14,15 @@
   "author": "keerthi",
   "license": "MIT",
   "dependencies": {
+    "chai": "^5.1.2",
     "dotenv": "^16.4.7",
     "express": "4.21.2",
-    "i": "^0.3.7"
-  },
-  "serverDependencies": {
-    "nodemon": "3.1.9"
+    "mocha": "^11.1.0",
+    "sinon": "^19.0.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "chai-http": "^5.1.1",
+    "nodemon": "3.1.9",
+    "ts-node": "^10.9.2"
   }
 }

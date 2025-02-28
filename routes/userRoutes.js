@@ -9,6 +9,7 @@ router.route('/').get(getAllUsers);
 router.route('/').post(createUsers);
 
 router.route('/:id').get(getUsersById);
+
 router.route('/:id').put(updateUsers);
 
 router.route('/:id').delete(deleteUser);
